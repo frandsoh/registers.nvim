@@ -5,7 +5,7 @@ Almost everything can be configured using the mandatory `registers.setup({})` me
 `packer.nvim` minimal setup:
 >
 use {
-  "tversteeg/registers.nvim",
+  "frandsoh/registers.nvim",
   config = function()
     require("registers").setup()
   end
@@ -16,7 +16,7 @@ Keys can be bound using functions, to make it easier for use I've made all funct
 
 For example, to apply a delay of a second after selecting the register with its key (for example pressing the '0' key to apply the '0' register when it's open):
 use {
-  "tversteeg/registers.nvim",
+  "frandsoh/registers.nvim",
   config = function()
     local registers = require("registers")
     registers.setup({

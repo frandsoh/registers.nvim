@@ -34,7 +34,7 @@ Use the <kbd>Up</kbd> and <kbd>Down</kbd> or <kbd>Ctrl</kbd><kbd>P</kbd> and <kb
 
 ```lua
 use {
-	"tversteeg/registers.nvim",
+	"frandsoh/registers.nvim",
 	config = function()
 		require("registers").setup()
 	end,
@@ -47,7 +47,7 @@ This configuration lazy-loads the plugin only when it's invoked.
 
 ```lua
 {
-	"tversteeg/registers.nvim",
+	"frandsoh/registers.nvim",
 	name = "registers",
 	keys = {
 		{ "\"",    mode = { "n", "v" } },
@@ -66,7 +66,7 @@ Configuration options can be found in Neovim's documentation after installing wi
 
 ```lua
 use {
-    "tversteeg/registers.nvim",
+    "frandsoh/registers.nvim",
     config = function()
         local registers = require("registers")
         registers.setup({
