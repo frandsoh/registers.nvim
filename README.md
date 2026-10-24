@@ -54,12 +54,17 @@ This configuration lazy-loads the plugin only when it's invoked.
 		{ "<C-R>", mode = "i" }
 	},
 	cmd = "Registers",
+    config = function()
+        local registers = require("registers")
+        registers.setup({})
+    end,
 }
 ```
 
 ## Configuration
 
 This plugin can be configured by passing a table to `require("registers").setup({})`.
+Calling registers is required, even without options, since it creates the keymaps.
 Configuration options can be found in Neovim's documentation after installing with: [`:h registers`](doc/registers.txt).
 
 ### Default Values
